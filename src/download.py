@@ -4,10 +4,7 @@ from pathlib import Path
 
 import requests
 
-URL = (
-    "https://www.data.gouv.fr/api/1/datasets/r/"
-    "91fe399d-cafa-4e72-8ba3-56d8717fdad4"
-)
+URL = "https://www.data.gouv.fr/api/1/datasets/r/91fe399d-cafa-4e72-8ba3-56d8717fdad4"  # noqa: E501
 RAW_DIR = Path(__file__).resolve().parent.parent / "data" / "raw"
 FICHIER = RAW_DIR / "regularite_mensuelle_tgv_par_liaisons.csv"
 
